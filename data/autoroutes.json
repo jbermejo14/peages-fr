@@ -1,0 +1,189 @@
+[
+  {
+    "code": "a1",
+    "nom": "A1 - Autoroute du Nord",
+    "villes": "Paris · Roissy · Compiègne · Arras · Lille",
+    "longueurKm": 211,
+    "concessionnaire": "Sanef",
+    "systemePeage": "Système fermé (ticket à la barrière de Chamant)",
+    "tarifMoyenClasse1": 18.10,
+    "fluxLibre": false,
+    "description": "L'autoroute A1 relie Paris à Lille et constitue l'un des axes autoroutiers les plus fréquentés d'Europe, reliant la capitale française aux ports de la mer du Nord et à la Belgique."
+  },
+  {
+    "code": "a4",
+    "nom": "A4 - Autoroute de l'Est",
+    "villes": "Paris · Reims · Metz · Strasbourg",
+    "longueurKm": 488,
+    "concessionnaire": "Sanef",
+    "systemePeage": "Système fermé",
+    "tarifMoyenClasse1": 44.50,
+    "fluxLibre": false,
+    "description": "L'autoroute A4 traverse le Grand Est de la France jusqu'à l'Allemagne. Elle dessert le parc Disneyland Paris, la Champagne et l'Alsace."
+  },
+  {
+    "code": "a6",
+    "nom": "A6 - Autoroute du Soleil (Nord)",
+    "villes": "Paris · Auxerre · Beaune · Chalon-sur-Saône · Lyon",
+    "longueurKm": 455,
+    "concessionnaire": "APRR",
+    "systemePeage": "Système fermé (Gares principales : Fleury-en-Bière et Villefranche-Limas)",
+    "tarifMoyenClasse1": 38.70,
+    "fluxLibre": false,
+    "description": "Colonne vertébrale des vacances françaises reliant Paris à Lyon via la Bourgogne. Elle est prolongée au sud par l'A7 en direction de la Méditerranée."
+  },
+  {
+    "code": "a7",
+    "nom": "A7 - Autoroute du Soleil (Sud)",
+    "villes": "Lyon · Vienne · Valence · Montélimar · Avignon · Marseille",
+    "longueurKm": 312,
+    "concessionnaire": "VINCI Autoroutes (ASF)",
+    "systemePeage": "Système fermé (Gare de Vienne au nord, Lançon-de-Provence au sud)",
+    "tarifMoyenClasse1": 28.30,
+    "fluxLibre": false,
+    "description": "L'axe mythique de la vallée du Rhône reliant Lyon à la côte méditerranéenne. Très chargée pendant les chassés-croisés estivaux."
+  },
+  {
+    "code": "a8",
+    "nom": "A8 - La Provençale",
+    "villes": "Aix-en-Provence · Fréjus · Cannes · Antibes · Nice · Menton (Italie)",
+    "longueurKm": 224,
+    "concessionnaire": "VINCI Autoroutes (Escota)",
+    "systemePeage": "Système ouvert (barrières successives sans ticket)",
+    "tarifMoyenClasse1": 20.90,
+    "fluxLibre": false,
+    "description": "Traverse la Côte d'Azur jusqu'à la frontière italienne. Système de péages ouverts successifs où chaque barrière facture un montant forfaitaire."
+  },
+  {
+    "code": "a9",
+    "nom": "A9 - La Languedocienne & La Catalane",
+    "villes": "Orange · Nîmes · Montpellier · Béziers · Narbonne · Perpignan · Espagne",
+    "longueurKm": 280,
+    "concessionnaire": "VINCI Autoroutes (ASF)",
+    "systemePeage": "Système fermé",
+    "tarifMoyenClasse1": 27.50,
+    "fluxLibre": false,
+    "description": "L'autoroute du pourtour méditerranéen reliant le couloir rhodanien à la frontière espagnole (col du Perthus). Axe international stratégique."
+  },
+  {
+    "code": "a10",
+    "nom": "A10 - L'Aquitaine",
+    "villes": "Paris · Orléans · Blois · Tours · Poitiers · Niort · Bordeaux",
+    "longueurKm": 543,
+    "concessionnaire": "Cofiroute (Paris-Poitiers) & VINCI ASF (Poitiers-Bordeaux)",
+    "systemePeage": "Système fermé (Gares principales : Saint-Arnoult et Virsac)",
+    "tarifMoyenClasse1": 61.40,
+    "fluxLibre": false,
+    "description": "La plus longue autoroute de France sous un même numéro. La gare de péage de Saint-Arnoult-en-Yvelines est la plus grande d'Europe avec 39 voies."
+  },
+  {
+    "code": "a11",
+    "nom": "A11 - L'Océane",
+    "villes": "Paris · Chartres · Le Mans · Angers · Nantes",
+    "longueurKm": 343,
+    "concessionnaire": "Cofiroute & VINCI ASF",
+    "systemePeage": "Système fermé",
+    "tarifMoyenClasse1": 42.10,
+    "fluxLibre": false,
+    "description": "Relie Paris à la façade atlantique et aux Pays de la Loire via la Beauce et l'Anjou."
+  },
+  {
+    "code": "a13",
+    "nom": "A13 - Autoroute de Normandie",
+    "villes": "Paris · Mantes-la-Jolie · Rouen · Deauville · Caen",
+    "longueurKm": 225,
+    "concessionnaire": "Sanef / SAPN",
+    "systemePeage": "Péage en FLUX LIBRE (sans barrière) depuis 2024",
+    "tarifMoyenClasse1": 15.20,
+    "fluxLibre": true,
+    "description": "L'axe historique Paris-Normandie est le premier grand axe autoroutier français converti intégralement en péage sans barrière (flux libre). Les caméras enregistrent les plaques et le paiement doit être réglé sous 72 heures."
+  },
+  {
+    "code": "a20",
+    "nom": "A20 - L'Occitane",
+    "villes": "Vierzon · Châteauroux · Limoges · Brive · Montauban",
+    "longueurKm": 427,
+    "concessionnaire": "État (gratuit de Vierzon à Brive) & VINCI ASF (section payante sud)",
+    "systemePeage": "Mixte : 270 km gratuits gérés par l'État, péage fermé au sud",
+    "tarifMoyenClasse1": 16.80,
+    "fluxLibre": false,
+    "description": "Connue pour sa traversée gratuite du Limousin et du Massif central nord, seule la section Brive-sud - Montauban est concédée et payante."
+  },
+  {
+    "code": "a61",
+    "nom": "A61 - Autoroute des Deux Mers (Est)",
+    "villes": "Toulouse · Carcassonne · Narbonne",
+    "longueurKm": 148,
+    "concessionnaire": "VINCI Autoroutes (ASF)",
+    "systemePeage": "Système fermé",
+    "tarifMoyenClasse1": 11.20,
+    "fluxLibre": false,
+    "description": "Relie Toulouse à la Méditerranée en longeant le canal du Midi. Élargie à 2x3 voies pour absorber le trafic estival."
+  },
+  {
+    "code": "a62",
+    "nom": "A62 - Autoroute des Deux Mers (Ouest)",
+    "villes": "Bordeaux · Agen · Montauban · Toulouse",
+    "longueurKm": 234,
+    "concessionnaire": "VINCI Autoroutes (ASF)",
+    "systemePeage": "Système fermé",
+    "tarifMoyenClasse1": 22.90,
+    "fluxLibre": false,
+    "description": "Relie les deux métropoles du Sud-Ouest, Bordeaux et Toulouse, le long de la vallée de la Garonne."
+  },
+  {
+    "code": "a63",
+    "nom": "A63 - Autoroute de la Côte Basque",
+    "villes": "Bordeaux · Dax · Bayonne · Biarritz · Hendaye (Espagne)",
+    "longueurKm": 206,
+    "concessionnaire": "Atlandes (section Landes) & VINCI ASF (section Basque)",
+    "systemePeage": "Système ouvert avec barrières péages successives (Saugnac, Castets, Benesse, Biriatou)",
+    "tarifMoyenClasse1": 14.70,
+    "fluxLibre": false,
+    "description": "Grand axe international de transit des poids lourds et touristes entre le nord de l'Europe, le Portugal et l'Espagne."
+  },
+  {
+    "code": "a71",
+    "nom": "A71 - L'Arverne",
+    "villes": "Orléans · Salbris · Vierzon · Bourges · Montluçon · Clermont-Ferrand",
+    "longueurKm": 290,
+    "concessionnaire": "Cofiroute (nord) & APRR (sud)",
+    "systemePeage": "Système fermé",
+    "tarifMoyenClasse1": 28.90,
+    "fluxLibre": false,
+    "description": "Traverse la Sologne et le Berry pour ouvrir les portes de l'Auvergne et du Massif central."
+  },
+  {
+    "code": "a75",
+    "nom": "A75 - La Méridienne",
+    "villes": "Clermont-Ferrand · Issoire · Saint-Flour · Millau · Lodève · Béziers",
+    "longueurKm": 335,
+    "concessionnaire": "État (gratuit) sauf Viaduc de Millau (Eiffage)",
+    "systemePeage": "Autoroute 100 % gratuite sauf péage du Viaduc de Millau",
+    "tarifMoyenClasse1": 10.10,
+    "fluxLibre": false,
+    "description": "L'autoroute la plus haute de France (col des Issartets à 1 121 m). Entièrement gratuite pour désenclaver le Massif central, à l'exception du célèbre viaduc de Millau."
+  },
+  {
+    "code": "a79",
+    "nom": "A79 - La Deux-Sèvres Bourbonnaise",
+    "villes": "Montmarault · Moulins · Digoin",
+    "longueurKm": 88,
+    "concessionnaire": "ALIAE (APRR)",
+    "systemePeage": "Péage en FLUX LIBRE intégral (première autoroute sans barrière de France)",
+    "tarifMoyenClasse1": 5.40,
+    "fluxLibre": true,
+    "description": "Ancienne RCEA (N79) réaménagée en autoroute sans barrière de péage. Des portiques automatiques scannent les véhicules pour un paiement en ligne sous 72 heures."
+  },
+  {
+    "code": "a89",
+    "nom": "A89 - La Transeuropéenne",
+    "villes": "Bordeaux · Périgueux · Brive · Tulle · Clermont-Ferrand · Roanne · Lyon",
+    "longueurKm": 544,
+    "concessionnaire": "VINCI ASF & APRR",
+    "systemePeage": "Système fermé",
+    "tarifMoyenClasse1": 59.80,
+    "fluxLibre": false,
+    "description": "L'axe transversal reliant l'Atlantique à Lyon à travers les volcans d'Auvergne et les monts du Lyonnais."
+  }
+]
