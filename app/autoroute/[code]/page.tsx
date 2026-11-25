@@ -11,6 +11,7 @@ import {
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { AdSlot } from '@/components/AdSlot';
 import { absoluteUrl } from '@/lib/site';
+import { seoAutorouteDescription, seoAutorouteTitle, seoOpenGraph } from '@/lib/seo';
 import {
   Compass,
   Building2,
@@ -40,8 +41,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!autoroute) return {};
 
   const codeUpper = autoroute.code.toUpperCase();
-  const title = `Péage ${codeUpper} 2026 : Tarifs, Concessionnaire & Infos Pratiques | Ododex`;
-  const description = `Tarifs et péages de l'autoroute ${autoroute.nom} (${autoroute.longueurKm} km). Concessionnaire ${autoroute.concessionnaire}, système de péage (${autoroute.systemePeage}) et trajets principaux.`;
+  const title = seoAutorouteTitle(codeUpper);
+  const description = seoAutorouteDescription({
+    name: autoroute.nom,
+    lengthKm: autoroute.longueurKm,
+    concessionaire: autoroute.concessionnaire,
+    tollSystem: autoroute.systemePeage,
+  });
 
   return {
     title,
@@ -49,11 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: absoluteUrl(`/autoroute/${autoroute.code}`),
     },
-    openGraph: {
-      title,
-      description,
-      url: absoluteUrl(`/autoroute/${autoroute.code}`),
-    },
+    openGraph: seoOpenGraph(title, description, `/autoroute/${autoroute.code}`),
   };
 }
 

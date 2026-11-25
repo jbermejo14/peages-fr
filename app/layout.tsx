@@ -5,10 +5,13 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { AdSenseScript } from '@/components/AdSenseScript';
 import { absoluteUrl } from '@/lib/site';
+import { SEO_HOME_DESCRIPTION, seoHomeTitle, seoOpenGraph, seoTwitter } from '@/lib/seo';
+
+const HOME_TITLE = seoHomeTitle();
 
 export const metadata: Metadata = {
-  title: 'Péages d\'Autoroute 2026 : Calculateur de Tarifs & Itinéraires | Ododex',
-  description: 'Calculez le prix exact des péages en France pour votre trajet (Classe 1, 2 et moto). Tout savoir sur le péage sans barrière en flux libre (A13, A79) et le badge télépéage.',
+  title: HOME_TITLE,
+  description: SEO_HOME_DESCRIPTION,
   metadataBase: new URL('https://ododex.com'),
   alternates: {
     canonical: absoluteUrl('/'),
@@ -16,14 +19,8 @@ export const metadata: Metadata = {
   icons: {
     icon: '/fr/peages/icon.svg',
   },
-  openGraph: {
-    title: 'Péages d\'Autoroute 2026 : Calculateur de Tarifs & Itinéraires | Ododex',
-    description: 'Calculez vos frais de péage et comparez avec les itinéraires gratuits sans péage en France.',
-    url: absoluteUrl('/'),
-    siteName: 'Ododex',
-    locale: 'fr_FR',
-    type: 'website',
-  },
+  openGraph: seoOpenGraph(HOME_TITLE, SEO_HOME_DESCRIPTION, '/'),
+  twitter: seoTwitter(),
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
 # Péages & Autoroutes France 2026 — Ododex (`/fr/peages`)
 
-Calculateur officiel des tarifs de péages d'autoroutes en France, comparateur de temps et coût face aux routes nationales gratuites, et guide des péages sans barrière en flux libre (A13 et A79).
+Calculateur des tarifs de péages d'autoroutes en France, comparateur de temps et coût face aux routes nationales gratuites, et guide des péages sans barrière en flux libre (A13 et A79).
 
 - **URL en production** : [https://ododex.com/fr/peages](https://ododex.com/fr/peages)
 - **Worker Cloudflare** : `ododex-peages`
@@ -11,7 +11,7 @@ Calculateur officiel des tarifs de péages d'autoroutes en France, comparateur d
 ## 🎯 Fonctionnalités Clés
 
 1. **Calculateur de Péages Multiclasse 2026** :
-   - Tarifs officiels actualisés 2026 pour Classe 1 (voitures), Classe 2 (utilitaires, camping-cars, vans avec coffre de toit) et Classe 5 (motos).
+   - Tarifs 2026 pour Classe 1 (voitures), Classe 2 (utilitaires, camping-cars, vans avec coffre de toit) et Classe 5 (motos).
    - Couverture des 17 autoroutes concédées (A1, A4, A6, A7, A8, A9, A10, A11, A13, A20, A61, A62, A63, A71, A75, A79, A89) et de 35 grandes villes de France.
    - Estimation du budget carburant (essence, gazole, électrique) et coût global du trajet.
 2. **Alerte Péage en Flux Libre (Free-Flow)** :

@@ -4,6 +4,7 @@ import { getAdSenseClient } from '@/components/AdSenseScript';
 import { getTitular, type Titular } from '@/lib/legal';
 import { legalHolderValue, legalMetadata } from '@/lib/legal-text';
 import { SITE_NAME } from '@/lib/site';
+import { seoFullTitle } from '@/lib/seo';
 
 const PATH = '/confidentialite';
 const URL_AEPD = 'https://www.aepd.es';
@@ -11,8 +12,8 @@ const URL_CNIL_PLAINTE = 'https://www.cnil.fr/fr/plaintes';
 
 export const metadata = legalMetadata(
   PATH,
-  'Politique de confidentialité',
-  `Traitement des données personnelles sur ${SITE_NAME}, conformément au RGPD.`
+  seoFullTitle('Politique de confidentialité'),
+  `Politique de confidentialité de ${SITE_NAME} : données traitées, destinataires techniques et exercice de vos droits au titre du RGPD.`
 );
 
 export default function ConfidentialitePage() {

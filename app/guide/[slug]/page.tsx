@@ -6,6 +6,7 @@ import { getAllGuides, getGuideBySlug } from '@/lib/guides';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { AdSlot } from '@/components/AdSlot';
 import { absoluteUrl } from '@/lib/site';
+import { seoFullTitle, seoOpenGraph } from '@/lib/seo';
 import { BookOpen, Calendar, Clock, ChevronRight, HelpCircle } from 'lucide-react';
 
 interface Props {
@@ -27,17 +28,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const guide = getGuideBySlug(slug);
   if (!guide) return {};
 
+  const title = seoFullTitle(guide.metaTitle);
+
   return {
-    title: `${guide.metaTitle} | Ododex`,
+    title,
     description: guide.metaDescription,
     alternates: {
       canonical: absoluteUrl(`/guide/${guide.slug}`),
     },
-    openGraph: {
-      title: guide.metaTitle,
-      description: guide.metaDescription,
-      url: absoluteUrl(`/guide/${guide.slug}`),
-    },
+    openGraph: seoOpenGraph(title, guide.metaDescription, `/guide/${guide.slug}`),
   };
 }
 

@@ -60,7 +60,7 @@ export function TollCalculator() {
           Calculateur de tarif de péage d’autoroute 2026
         </h2>
         <p className="text-xs text-secondary mt-1">
-          Sélectionnez vos villes de départ et d’arrivée pour calculer le tarif officiel exact et comparer le temps gagné face à l’itinéraire gratuit.
+          Sélectionnez vos villes de départ et d’arrivée pour calculer le tarif exact et comparer le temps gagné face à l’itinéraire gratuit.
         </p>
       </div>
 

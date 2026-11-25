@@ -72,7 +72,7 @@ export function Footer() {
         </div>
 
         <p className="text-muted leading-relaxed">
-          Tarifs officiels arrêtés par l’État et les sociétés concessionnaires d’autoroutes (APRR, AREA, ASF, Cofiroute, Escota, Sanef, SAPN, ATMB).
+          Les tarifs de référence sont fixés par l’État et les sociétés concessionnaires d’autoroutes (APRR, AREA, ASF, Cofiroute, Escota, Sanef, SAPN, ATMB).
           Ododex est un portail indépendant d’information pratique non affilié aux sociétés concessionnaires d’autoroutes ni à l’ASFA.
         </p>
 

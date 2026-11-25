@@ -3,14 +3,15 @@ import { LegalPage } from '@/components/LegalPage';
 import { getAdSenseClient } from '@/components/AdSenseScript';
 import { legalMetadata } from '@/lib/legal-text';
 import { SITE_NAME } from '@/lib/site';
+import { seoFullTitle } from '@/lib/seo';
 
 const PATH = '/cookies';
 const URL_COOKIES_GOOGLE = 'https://policies.google.com/technologies/cookies?hl=fr';
 
 export const metadata = legalMetadata(
   PATH,
-  'Politique relative aux cookies',
-  `Gestion des cookies et du stockage local sur ${SITE_NAME}.`
+  seoFullTitle('Politique relative aux cookies'),
+  `Politique relative aux cookies de ${SITE_NAME} : traceurs utilisés, stockage local de vos préférences et gestion de votre consentement.`
 );
 
 export default function CookiesPage() {

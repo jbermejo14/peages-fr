@@ -11,6 +11,7 @@ import {
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { AdSlot } from '@/components/AdSlot';
 import { absoluteUrl } from '@/lib/site';
+import { seoOpenGraph, seoTrajetDescription, seoTrajetTitle } from '@/lib/seo';
 import {
   Coins,
   Clock,
@@ -42,8 +43,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const trajet = getTrajetById(slug);
   if (!trajet) return {};
 
-  const title = `Péage ${trajet.departNom} - ${trajet.arriveeNom} 2026 : Prix, Tarif et Itinéraire (${formatPrice(trajet.peageClasse1)}) | Ododex`;
-  const description = `Prix officiel du péage entre ${trajet.departNom} et ${trajet.arriveeNom} : ${formatPrice(trajet.peageClasse1)} en voiture, ${formatPrice(trajet.peageClasse2)} en van/camping-car, ${formatPrice(trajet.peageClasse5)} à moto. Distance de ${trajet.distanceKm} km et comparatif sans péage.`;
+  const title = seoTrajetTitle(trajet.departNom, trajet.arriveeNom, formatPrice(trajet.peageClasse1));
+  const description = seoTrajetDescription({
+    depart: trajet.departNom,
+    arrivee: trajet.arriveeNom,
+    distanceKm: trajet.distanceKm,
+    class1: formatPrice(trajet.peageClasse1),
+    class2: formatPrice(trajet.peageClasse2),
+    class5: formatPrice(trajet.peageClasse5),
+  });
 
   return {
     title,
@@ -51,11 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: absoluteUrl(`/trajet/${trajet.id}`),
     },
-    openGraph: {
-      title,
-      description,
-      url: absoluteUrl(`/trajet/${trajet.id}`),
-    },
+    openGraph: seoOpenGraph(title, description, `/trajet/${trajet.id}`),
   };
 }
 

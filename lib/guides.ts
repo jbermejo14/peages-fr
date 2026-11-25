@@ -23,7 +23,7 @@ export const GUIDES: GuideArticle[] = [
   {
     slug: 'peage-flux-libre-sans-barriere-comment-payer',
     title: 'Péage en flux libre (A13, A79) : comment payer et éviter l’amende de 90 € ?',
-    metaTitle: 'Péage en Flux Libre A13 & A79 : Paiement et Délais 2026',
+    metaTitle: 'Péage en flux libre A13 et A79 : payer sous 72 h',
     metaDescription: 'Tout savoir sur le péage sans barrière en France : délai de paiement sous 72h, sites de paiement en ligne (Sanef, Aliae), badge télépéage et sanctions.',
     summary: 'La fin des barrières physiques sur l’A13 (Paris-Normandie) et l’A79 révolutionne la route. Vos plaques sont scannées par des portiques automatiques : découvrez les démarches obligatoires pour régler votre trajet dans les 72 heures.',
     readTime: '6 min',
@@ -84,8 +84,8 @@ export const GUIDES: GuideArticle[] = [
   {
     slug: 'badge-telepeage-ulys-bipandgo-comparatif',
     title: 'Badge télépéage : comparatif Ulys, Bip&Go, Fulli et calcul de rentabilité',
-    metaTitle: 'Comparatif Badges Télépéage 2026 : Ulys vs Bip&Go vs Fulli',
-    metaDescription: 'Quel est le meilleur badge télépéage en 2026 ? Comparatif des formules sans abonnement, voies 30 km/h, validité Espagne/Portugal/Italie et astuces d’utilisation.',
+    metaTitle: 'Badge télépéage 2026 : Ulys, Bip&Go ou Fulli ?',
+    metaDescription: 'Quel est le meilleur badge télépéage en 2026 ? Comparatif des formules sans abonnement, voies 30 km/h, validité en Espagne, au Portugal et en Italie.',
     summary: 'Fini l’attente aux barrières et la vitre baissée sous la pluie : analyse des offres de télépéage Liber-t, frais réels d’utilisation et formules "à la carte" où vous ne payez que les mois où vous roulez.',
     readTime: '5 min',
     publishedAt: '2026-02-05',
@@ -141,15 +141,15 @@ export const GUIDES: GuideArticle[] = [
   {
     slug: 'classes-vehicules-peage-autoroute',
     title: 'Classes de véhicules au péage : comment éviter d’être surclassé ?',
-    metaTitle: 'Classes de Péage Autoroute en France (1 à 5) : Règles et Tarifs',
-    metaDescription: 'Classe 1, 2, 3, 4 ou 5 : découvrez la grille officielle des classes de péage en France, l’impact des coffres de toit et comment corriger une erreur.',
+    metaTitle: 'Classes de péage (1 à 5) : règles et tarifs',
+    metaDescription: 'Classe 1, 2, 3, 4 ou 5 : découvrez la grille des classes de péage en France, l’impact des coffres de toit et comment corriger une erreur.',
     summary: 'Entre la classe 1 (voiture) et la classe 2 (utilitaire/van), les tarifs de péage augmentent en moyenne de 50 %. Hauteur maximale de 2 mètres, chargement sur le toit et tolérances des capteurs.',
     readTime: '5 min',
     publishedAt: '2026-02-15',
     updatedAt: '2026-11-22',
     sections: [
       {
-        heading: '1. La classification officielle en 5 catégories',
+        heading: '1. La classification en 5 catégories',
         content: [
           'Le tarif du péage dépend exclusivement du gabarit physique de votre ensemble de véhicules :',
           '• Classe 1 (Véhicules légers) : hauteur totale ≤ 2 mètres ET poids total autorisé en charge (PTAC) ≤ 3,5 tonnes. Concerne toutes les berlines, citadines, breaks, SUV et monospaces standards.',
@@ -194,7 +194,7 @@ export const GUIDES: GuideArticle[] = [
   {
     slug: 'astuces-payer-moins-cher-autoroute',
     title: 'Comment payer moins cher l’autoroute : astuces et techniques légales',
-    metaTitle: 'Économiser sur les Péages d’Autoroute : 5 Astuces Légales 2026',
+    metaTitle: 'Péages moins chers : 5 astuces légales en 2026',
     metaDescription: 'Découvrez la technique du fractionnement de sortie, les contournements gratuits et le covoiturage pour économiser jusqu’à 30 % sur vos trajets d’autoroute.',
     summary: 'Les tarifs des concessions autoroutières ne sont pas proportionnels à la distance. En fractionnant vos sorties ou en combinant autoroute et voies express gratuites, vous pouvez réduire la facture de 10 € à 30 € par trajet.',
     readTime: '6 min',

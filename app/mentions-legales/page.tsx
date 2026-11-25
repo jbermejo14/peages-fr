@@ -3,6 +3,7 @@ import { LegalPage } from '@/components/LegalPage';
 import { getTitular, type Titular } from '@/lib/legal';
 import { legalHolderValue, legalMetadata } from '@/lib/legal-text';
 import { SITE_NAME } from '@/lib/site';
+import { seoFullTitle } from '@/lib/seo';
 
 const PATH = '/mentions-legales';
 const URL_CLOUDFLARE = 'https://www.cloudflare.com';
@@ -10,8 +11,8 @@ const URL_ASFA = 'https://www.autoroutes.fr';
 
 export const metadata = legalMetadata(
   PATH,
-  'Mentions légales',
-  `Mentions légales de ${SITE_NAME} : éditeur, hébergeur, sources des données des péages et limites de responsabilité.`
+  seoFullTitle('Mentions légales'),
+  `Mentions légales de ${SITE_NAME} : éditeur du site, hébergeur, origine des données de péages, indépendance du site et propriété intellectuelle.`
 );
 
 export default function MentionsLegalesPage() {

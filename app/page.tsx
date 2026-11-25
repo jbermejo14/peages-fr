@@ -31,7 +31,7 @@ export default function HomePage() {
     '@type': 'WebSite',
     name: 'Ododex Péages d\'Autoroute',
     url: absoluteUrl('/'),
-    description: 'Calculateur officiel des tarifs de péages autoroutiers en France, comparateur d’itinéraires gratuits et guide du péage sans barrière en flux libre.'
+    description: 'Calculateur des tarifs de péages autoroutiers en France, comparateur d’itinéraires gratuits et guide du péage sans barrière en flux libre.'
   };
 
   const faqSchema = {
@@ -57,7 +57,10 @@ export default function HomePage() {
       {
         '@type': 'Question',
         name: 'Un coffre de toit fait-il passer une voiture en Classe 2 ?',
-        answer: 'Non. Selon la réglementation officielle, les accessoires sur le toit (coffre, vélos) ne doivent pas être comptés dans la hauteur. Si la barrière automatique vous surclasse en Classe 2, appuyez sur le bouton d’assistance pour rectification.'
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Non. Selon la réglementation en vigueur, les accessoires sur le toit (coffre, vélos) ne doivent pas être comptés dans la hauteur. Si la barrière automatique vous surclasse en Classe 2, appuyez sur le bouton d’assistance pour rectification.'
+        }
       },
       {
         '@type': 'Question',
@@ -86,7 +89,7 @@ export default function HomePage() {
         <div className="text-center space-y-4 max-w-3xl mx-auto pt-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold">
             <Coins className="w-4 h-4" />
-            Tarifs officiels autoroutiers 2026 · Concessions françaises
+            Tarifs autoroutiers 2026 · Concessions françaises
           </div>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold text-fg tracking-tight">
@@ -133,7 +136,7 @@ export default function HomePage() {
               Prix des péages sur les trajets majeurs en France
             </h2>
             <p className="text-xs text-secondary mt-1">
-              Consultez les tarifs officiels pour les trajets autoroutiers les plus fréquentés.
+              Consultez les tarifs pour les trajets autoroutiers les plus fréquentés.
             </p>
           </div>
 
