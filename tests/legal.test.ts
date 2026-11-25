@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { getTitular, ficheroTitular } from '../lib/legal';
+import { absoluteUrl } from '../lib/site';
 import { legalHolderValue, legalReviewDate, legalMetadata } from '../lib/legal-text';
 
 describe('Textes légaux et titulaire', () => {

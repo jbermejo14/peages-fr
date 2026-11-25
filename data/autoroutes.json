@@ -8,7 +8,8 @@
     "systemePeage": "Système fermé (ticket à la barrière de Chamant)",
     "tarifMoyenClasse1": 18.10,
     "fluxLibre": false,
-    "description": "L'autoroute A1 relie Paris à Lille et constitue l'un des axes autoroutiers les plus fréquentés d'Europe, reliant la capitale française aux ports de la mer du Nord et à la Belgique."
+    "description": "L'autoroute A1 relie Paris à Lille et constitue l'un des axes autoroutiers les plus fréquentés d'Europe, reliant la capitale française aux ports de la mer du Nord et à la Belgique.",
+    "descriptionSeo": "Péage A1 (Autoroute du Nord) : 211 km de Paris à Lille, exploitée par Sanef en système fermé avec ticket à Chamant. Tarifs 2026 par classe."
   },
   {
     "code": "a4",
@@ -19,7 +20,8 @@
     "systemePeage": "Système fermé",
     "tarifMoyenClasse1": 44.50,
     "fluxLibre": false,
-    "description": "L'autoroute A4 traverse le Grand Est de la France jusqu'à l'Allemagne. Elle dessert le parc Disneyland Paris, la Champagne et l'Alsace."
+    "description": "L'autoroute A4 traverse le Grand Est de la France jusqu'à l'Allemagne. Elle dessert le parc Disneyland Paris, la Champagne et l'Alsace.",
+    "descriptionSeo": "Péage A4 (Autoroute de l’Est) : 488 km de Paris à Strasbourg par Reims et Metz, exploitée par Sanef en système fermé. Tarifs 2026 par classe."
   },
   {
     "code": "a6",
@@ -30,7 +32,8 @@
     "systemePeage": "Système fermé (Gares principales : Fleury-en-Bière et Villefranche-Limas)",
     "tarifMoyenClasse1": 38.70,
     "fluxLibre": false,
-    "description": "Colonne vertébrale des vacances françaises reliant Paris à Lyon via la Bourgogne. Elle est prolongée au sud par l'A7 en direction de la Méditerranée."
+    "description": "Colonne vertébrale des vacances françaises reliant Paris à Lyon via la Bourgogne. Elle est prolongée au sud par l'A7 en direction de la Méditerranée.",
+    "descriptionSeo": "Péage A6 (Autoroute du Soleil nord) : 455 km de Paris à Lyon, exploitée par APRR en système fermé, gares de Fleury-en-Bière et Limas. Tarifs 2026."
   },
   {
     "code": "a7",
@@ -41,7 +44,8 @@
     "systemePeage": "Système fermé (Gare de Vienne au nord, Lançon-de-Provence au sud)",
     "tarifMoyenClasse1": 28.30,
     "fluxLibre": false,
-    "description": "L'axe mythique de la vallée du Rhône reliant Lyon à la côte méditerranéenne. Très chargée pendant les chassés-croisés estivaux."
+    "description": "L'axe mythique de la vallée du Rhône reliant Lyon à la côte méditerranéenne. Très chargée pendant les chassés-croisés estivaux.",
+    "descriptionSeo": "Péage A7 (Autoroute du Soleil sud) : 312 km de Lyon à Marseille, exploitée par VINCI Autoroutes (ASF) en système fermé, ticket pris à Vienne. Tarifs 2026."
   },
   {
     "code": "a8",
@@ -52,7 +56,8 @@
     "systemePeage": "Système ouvert (barrières successives sans ticket)",
     "tarifMoyenClasse1": 20.90,
     "fluxLibre": false,
-    "description": "Traverse la Côte d'Azur jusqu'à la frontière italienne. Système de péages ouverts successifs où chaque barrière facture un montant forfaitaire."
+    "description": "Traverse la Côte d'Azur jusqu'à la frontière italienne. Système de péages ouverts successifs où chaque barrière facture un montant forfaitaire.",
+    "descriptionSeo": "Péage A8 (La Provençale) : 224 km d’Aix-en-Provence à Menton, exploitée par VINCI Autoroutes (Escota), barrières successives sans ticket. Tarifs 2026."
   },
   {
     "code": "a9",
@@ -63,7 +68,8 @@
     "systemePeage": "Système fermé",
     "tarifMoyenClasse1": 27.50,
     "fluxLibre": false,
-    "description": "L'autoroute du pourtour méditerranéen reliant le couloir rhodanien à la frontière espagnole (col du Perthus). Axe international stratégique."
+    "description": "L'autoroute du pourtour méditerranéen reliant le couloir rhodanien à la frontière espagnole (col du Perthus). Axe international stratégique.",
+    "descriptionSeo": "Péage A9 (La Languedocienne et La Catalane) : 280 km d’Orange à l’Espagne, exploitée par VINCI Autoroutes (ASF) en système fermé. Tarifs 2026."
   },
   {
     "code": "a10",
@@ -74,7 +80,8 @@
     "systemePeage": "Système fermé (Gares principales : Saint-Arnoult et Virsac)",
     "tarifMoyenClasse1": 61.40,
     "fluxLibre": false,
-    "description": "La plus longue autoroute de France sous un même numéro. La gare de péage de Saint-Arnoult-en-Yvelines est la plus grande d'Europe avec 39 voies."
+    "description": "La plus longue autoroute de France sous un même numéro. La gare de péage de Saint-Arnoult-en-Yvelines est la plus grande d'Europe avec 39 voies.",
+    "descriptionSeo": "Péage A10 (L’Aquitaine) : 543 km de Paris à Bordeaux, exploitée par Cofiroute puis VINCI Autoroutes (ASF) après Poitiers, système fermé. Tarifs 2026."
   },
   {
     "code": "a11",
@@ -85,7 +92,8 @@
     "systemePeage": "Système fermé",
     "tarifMoyenClasse1": 42.10,
     "fluxLibre": false,
-    "description": "Relie Paris à la façade atlantique et aux Pays de la Loire via la Beauce et l'Anjou."
+    "description": "Relie Paris à la façade atlantique et aux Pays de la Loire via la Beauce et l'Anjou.",
+    "descriptionSeo": "Péage A11 (L’Océane) : 343 km de Paris à Nantes par Chartres, Le Mans et Angers, exploitée par Cofiroute et VINCI Autoroutes (ASF), système fermé. Tarifs 2026."
   },
   {
     "code": "a13",
@@ -96,7 +104,8 @@
     "systemePeage": "Péage en FLUX LIBRE (sans barrière) depuis 2024",
     "tarifMoyenClasse1": 15.20,
     "fluxLibre": true,
-    "description": "L'axe historique Paris-Normandie est le premier grand axe autoroutier français converti intégralement en péage sans barrière (flux libre). Les caméras enregistrent les plaques et le paiement doit être réglé sous 72 heures."
+    "description": "L'axe historique Paris-Normandie est le premier grand axe autoroutier français converti intégralement en péage sans barrière (flux libre). Les caméras enregistrent les plaques et le paiement doit être réglé sous 72 heures.",
+    "descriptionSeo": "Péage A13 (Autoroute de Normandie) : 225 km de Paris à Caen, exploitée par Sanef et SAPN. Péage sans barrière depuis 2024, à payer en ligne. Tarifs 2026."
   },
   {
     "code": "a20",
@@ -107,7 +116,8 @@
     "systemePeage": "Mixte : 270 km gratuits gérés par l'État, péage fermé au sud",
     "tarifMoyenClasse1": 16.80,
     "fluxLibre": false,
-    "description": "Connue pour sa traversée gratuite du Limousin et du Massif central nord, seule la section Brive-sud - Montauban est concédée et payante."
+    "description": "Connue pour sa traversée gratuite du Limousin et du Massif central nord, seule la section Brive-sud - Montauban est concédée et payante.",
+    "descriptionSeo": "A20 (L’Occitane) : 427 km de Vierzon à Montauban, gratuite sous gestion de l’État jusqu’à Brive, puis payante avec VINCI Autoroutes (ASF). Tarifs 2026."
   },
   {
     "code": "a61",
@@ -118,7 +128,8 @@
     "systemePeage": "Système fermé",
     "tarifMoyenClasse1": 11.20,
     "fluxLibre": false,
-    "description": "Relie Toulouse à la Méditerranée en longeant le canal du Midi. Élargie à 2x3 voies pour absorber le trafic estival."
+    "description": "Relie Toulouse à la Méditerranée en longeant le canal du Midi. Élargie à 2x3 voies pour absorber le trafic estival.",
+    "descriptionSeo": "Péage A61 (Autoroute des Deux Mers, est) : 148 km de Toulouse à Narbonne, exploitée par VINCI Autoroutes (ASF) en système fermé. Tarifs 2026 par classe."
   },
   {
     "code": "a62",
@@ -129,7 +140,8 @@
     "systemePeage": "Système fermé",
     "tarifMoyenClasse1": 22.90,
     "fluxLibre": false,
-    "description": "Relie les deux métropoles du Sud-Ouest, Bordeaux et Toulouse, le long de la vallée de la Garonne."
+    "description": "Relie les deux métropoles du Sud-Ouest, Bordeaux et Toulouse, le long de la vallée de la Garonne.",
+    "descriptionSeo": "Péage A62 (Autoroute des Deux Mers, ouest) : 234 km de Bordeaux à Toulouse, exploitée par VINCI Autoroutes (ASF) en système fermé. Tarifs 2026 par classe."
   },
   {
     "code": "a63",
@@ -140,7 +152,8 @@
     "systemePeage": "Système ouvert avec barrières péages successives (Saugnac, Castets, Benesse, Biriatou)",
     "tarifMoyenClasse1": 14.70,
     "fluxLibre": false,
-    "description": "Grand axe international de transit des poids lourds et touristes entre le nord de l'Europe, le Portugal et l'Espagne."
+    "description": "Grand axe international de transit des poids lourds et touristes entre le nord de l'Europe, le Portugal et l'Espagne.",
+    "descriptionSeo": "Péage A63 (Côte Basque) : 206 km de Bordeaux à Hendaye, exploitée par Atlandes puis VINCI Autoroutes (ASF), barrières successives. Tarifs 2026."
   },
   {
     "code": "a71",
@@ -151,7 +164,8 @@
     "systemePeage": "Système fermé",
     "tarifMoyenClasse1": 28.90,
     "fluxLibre": false,
-    "description": "Traverse la Sologne et le Berry pour ouvrir les portes de l'Auvergne et du Massif central."
+    "description": "Traverse la Sologne et le Berry pour ouvrir les portes de l'Auvergne et du Massif central.",
+    "descriptionSeo": "Péage A71 (L’Arverne) : 290 km d’Orléans à Clermont-Ferrand, exploitée par Cofiroute au nord et par APRR au sud, en système fermé. Tarifs 2026 par classe."
   },
   {
     "code": "a75",
@@ -162,7 +176,8 @@
     "systemePeage": "Autoroute 100 % gratuite sauf péage du Viaduc de Millau",
     "tarifMoyenClasse1": 10.10,
     "fluxLibre": false,
-    "description": "L'autoroute la plus haute de France (col des Issartets à 1 121 m). Entièrement gratuite pour désenclaver le Massif central, à l'exception du célèbre viaduc de Millau."
+    "description": "L'autoroute la plus haute de France (col des Issartets à 1 121 m). Entièrement gratuite pour désenclaver le Massif central, à l'exception du célèbre viaduc de Millau.",
+    "descriptionSeo": "A75 (La Méridienne) : 335 km de Clermont-Ferrand à Béziers, gratuite et gérée par l’État, sauf le viaduc de Millau exploité par Eiffage. Tarifs 2026."
   },
   {
     "code": "a79",
@@ -173,7 +188,8 @@
     "systemePeage": "Péage en FLUX LIBRE intégral (première autoroute sans barrière de France)",
     "tarifMoyenClasse1": 5.40,
     "fluxLibre": true,
-    "description": "Ancienne RCEA (N79) réaménagée en autoroute sans barrière de péage. Des portiques automatiques scannent les véhicules pour un paiement en ligne sous 72 heures."
+    "description": "Ancienne RCEA (N79) réaménagée en autoroute sans barrière de péage. Des portiques automatiques scannent les véhicules pour un paiement en ligne sous 72 heures.",
+    "descriptionSeo": "Péage A79 (Deux-Sèvres Bourbonnaise) : 88 km de Montmarault à Digoin, exploitée par ALIAE (APRR), sans barrière : paiement en ligne sous 72 h. Tarifs 2026."
   },
   {
     "code": "a89",
@@ -184,6 +200,7 @@
     "systemePeage": "Système fermé",
     "tarifMoyenClasse1": 59.80,
     "fluxLibre": false,
-    "description": "L'axe transversal reliant l'Atlantique à Lyon à travers les volcans d'Auvergne et les monts du Lyonnais."
+    "description": "L'axe transversal reliant l'Atlantique à Lyon à travers les volcans d'Auvergne et les monts du Lyonnais.",
+    "descriptionSeo": "Péage A89 (La Transeuropéenne) : 544 km de Bordeaux à Lyon par Clermont-Ferrand, exploitée par VINCI Autoroutes (ASF) et APRR en système fermé. Tarifs 2026."
   }
 ]

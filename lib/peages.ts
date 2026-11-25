@@ -23,6 +23,7 @@ export interface Autoroute {
   tarifMoyenClasse1: number;
   fluxLibre: boolean;
   description: string;
+  descriptionSeo: string;
 }
 
 export interface Trajet {

@@ -54,12 +54,7 @@ function autoroutePages(): PageMeta[] {
   return getAllAutoroutes().map((a) => ({
     label: `autoroute/${a.code}`,
     title: seoAutorouteTitle(a.code.toUpperCase()),
-    description: seoAutorouteDescription({
-      name: a.nom,
-      lengthKm: a.longueurKm,
-      concessionaire: a.concessionnaire,
-      tollSystem: a.systemePeage,
-    }),
+    description: seoAutorouteDescription(a.descriptionSeo),
   }));
 }
 
@@ -140,6 +135,20 @@ describe('SEO : titres et descriptions de toutes les pages', () => {
     }
   });
 
+  it('descriptions d’autoroute : sans « & », sans majuscules de flux libre, sans « Péage : »', () => {
+    for (const page of autoroutePages()) {
+      assert.doesNotMatch(page.description, / & /, page.label);
+      assert.doesNotMatch(page.description, /FLUX LIBRE/, page.label);
+      assert.doesNotMatch(page.description, /Péage : /, page.label);
+      assert.match(page.description, /tarifs 2026/i, page.label);
+    }
+  });
+
+  it('seoAutorouteDescription refuse une description hors bornes', () => {
+    assert.throws(() => seoAutorouteDescription('trop courte'));
+    assert.throws(() => seoAutorouteDescription('x'.repeat(SEO_DESCRIPTION_MAX + 1)));
+  });
+
   it('aucune page ne se présente comme officielle', () => {
     for (const page of allPages()) {
       assert.doesNotMatch(`${page.title} ${page.description}`, /officiel/i, page.label);
@@ -178,14 +187,16 @@ describe('SEO : image Open Graph', () => {
     assert.equal(og.images?.[0].url, seoOgImageUrl());
     assert.equal(og.images?.[0].width, SEO_OG_IMAGE_WIDTH);
     assert.equal(og.images?.[0].height, SEO_OG_IMAGE_HEIGHT);
-    const twitter = seoTwitter() as { card?: string; images?: string[] };
+    const twitter = seoTwitter('t', 'd') as { card?: string; title?: string; description?: string; images?: string[] };
     assert.equal(twitter.card, 'summary_large_image');
+    assert.equal(twitter.title, 't');
+    assert.equal(twitter.description, 'd');
     assert.deepEqual(twitter.images, [seoOgImageUrl()]);
   });
 
   it('le layout et les pages dynamiques utilisent ces fonctions', () => {
     assert.match(readFileSync('app/layout.tsx', 'utf8'), /openGraph: seoOpenGraph\(/);
-    assert.match(readFileSync('app/layout.tsx', 'utf8'), /twitter: seoTwitter\(\)/);
+    assert.match(readFileSync('app/layout.tsx', 'utf8'), /twitter: seoTwitter\(HOME_TITLE, SEO_HOME_DESCRIPTION\)/);
     for (const file of ['app/trajet/[slug]/page.tsx', 'app/autoroute/[code]/page.tsx', 'app/guide/[slug]/page.tsx']) {
       assert.match(readFileSync(file, 'utf8'), /openGraph: seoOpenGraph\(/, file);
     }

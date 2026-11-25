@@ -11,7 +11,7 @@ import {
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { AdSlot } from '@/components/AdSlot';
 import { absoluteUrl } from '@/lib/site';
-import { seoAutorouteDescription, seoAutorouteTitle, seoOpenGraph } from '@/lib/seo';
+import { seoAutorouteDescription, seoAutorouteTitle, seoOpenGraph, seoTwitter } from '@/lib/seo';
 import {
   Compass,
   Building2,
@@ -42,12 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const codeUpper = autoroute.code.toUpperCase();
   const title = seoAutorouteTitle(codeUpper);
-  const description = seoAutorouteDescription({
-    name: autoroute.nom,
-    lengthKm: autoroute.longueurKm,
-    concessionaire: autoroute.concessionnaire,
-    tollSystem: autoroute.systemePeage,
-  });
+  const description = seoAutorouteDescription(autoroute.descriptionSeo);
 
   return {
     title,
@@ -56,6 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: absoluteUrl(`/autoroute/${autoroute.code}`),
     },
     openGraph: seoOpenGraph(title, description, `/autoroute/${autoroute.code}`),
+    twitter: seoTwitter(title, description),
   };
 }
 

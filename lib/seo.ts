@@ -69,31 +69,6 @@ export function seoHomeTitle(): string {
   return seoPickTitle(['Péages d’autoroute 2026 : calculateur de tarifs']);
 }
 
-/** Aplatit la parenthèse finale d’un libellé (« A (B) » devient « a, B »). */
-export function seoFlattenParentheses(label: string): string {
-  const flat = label.replace(/\s*\(([^)]*)\)?\s*$/, ', $1').trim();
-  return flat.charAt(0).toLowerCase() + flat.slice(1);
-}
-
-/** Intègre les parenthèses au texte (« A (B) » devient « A B »). */
-export function seoInlineParentheses(label: string): string {
-  return label.replace(/\s*\(([^)]*)\)/g, ' $1').trim();
-}
-
-/** Retire les précisions entre parenthèses d’un libellé. */
-export function seoDropParentheses(label: string): string {
-  return label.replace(/\s*\([^)]*\)/g, '').trim();
-}
-
-/** Garde le début d’un libellé, avant toute parenthèse ou tout deux-points. */
-export function seoShortLabel(label: string): string {
-  return label.replace(/\s*[(:].*$/, '').trim();
-}
-
-function seoLowerFirst(text: string): string {
-  return text.charAt(0).toLowerCase() + text.slice(1);
-}
-
 export function seoTrajetDescription(args: {
   depart: string;
   arrivee: string;
@@ -111,39 +86,19 @@ export function seoTrajetDescription(args: {
   ]);
 }
 
-const SEO_AUTOROUTE_TAILS = [
-  'Tarifs 2026 par classe de véhicule et trajets principaux.',
-  'Tarifs 2026 et trajets principaux, avec conseils pratiques.',
-  'Tarifs 2026, trajets principaux et conseils pratiques pour bien préparer votre route.',
-  'Tarifs 2026 et trajets principaux.',
-  'Tarifs 2026.',
-];
-
 /**
- * Description d’autoroute : de la version la plus détaillée à la plus courte,
- * la première qui tient entre le minimum et le maximum est retenue.
+ * Description d’autoroute rédigée à la main (champ `descriptionSeo` des
+ * données). Échoue si sa longueur sort des bornes : une description trop
+ * courte ou trop longue est une erreur de données à corriger, pas à masquer.
  */
-export function seoAutorouteDescription(args: {
-  name: string;
-  lengthKm: number;
-  concessionaire: string;
-  tollSystem: string;
-}): string {
-  const { name, lengthKm, concessionaire, tollSystem } = args;
-  const prefix = `Autoroute ${seoInlineParentheses(name)} (${lengthKm} km), exploitée par`;
-  const heads = [
-    `${prefix} ${seoInlineParentheses(concessionaire)}.`,
-    `${prefix} ${seoDropParentheses(concessionaire)}.`,
-  ];
-  const systems = [
-    seoFlattenParentheses(tollSystem),
-    seoLowerFirst(seoDropParentheses(tollSystem)),
-    seoLowerFirst(seoShortLabel(tollSystem)),
-  ];
-  const variants = heads.flatMap((head) =>
-    systems.flatMap((system) => SEO_AUTOROUTE_TAILS.map((tail) => `${head} Péage : ${system}. ${tail}`))
-  );
-  return seoPickDescription(variants);
+export function seoAutorouteDescription(descriptionSeo: string): string {
+  const length = descriptionSeo.length;
+  if (length < SEO_DESCRIPTION_MIN || length > SEO_DESCRIPTION_MAX) {
+    throw new Error(
+      `descriptionSeo de ${length} caractères (attendu : ${SEO_DESCRIPTION_MIN} à ${SEO_DESCRIPTION_MAX}) : « ${descriptionSeo} »`
+    );
+  }
+  return descriptionSeo;
 }
 
 export function seoOgImageUrl(): string {
@@ -174,6 +129,6 @@ export function seoOpenGraph(title: string, description: string, path: string): 
   };
 }
 
-export function seoTwitter(): NonNullable<Metadata['twitter']> {
-  return { card: 'summary_large_image', images: [seoOgImageUrl()] };
+export function seoTwitter(title: string, description: string): NonNullable<Metadata['twitter']> {
+  return { card: 'summary_large_image', title, description, images: [seoOgImageUrl()] };
 }

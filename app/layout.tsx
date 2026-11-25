@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     icon: '/fr/peages/icon.svg',
   },
   openGraph: seoOpenGraph(HOME_TITLE, SEO_HOME_DESCRIPTION, '/'),
-  twitter: seoTwitter(),
+  twitter: seoTwitter(HOME_TITLE, SEO_HOME_DESCRIPTION),
 };
 
 export default function RootLayout({
